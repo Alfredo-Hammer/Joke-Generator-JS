@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to left bottom,  lightblue , lightpink, lightblue);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+}
+.container{
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, .3);
+    padding: 20px;
+    color: darkgreen;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, .3);
+}
+
+.heading{
+    font-size: 35px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 20px;
+    text-shadow: 5px 5px 2px rgba(0, 0, 0, .3);
+    letter-spacing: 2px;
+}
+
+.joke{
+    color: black;
+    font-size: 25px;
+    text-align: center;
+    margin: 30px;
+}
+
+.btn{
+    width: 260px;
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 10px;
+    text-transform: uppercase;
+}
+
+.btn:hover{
+    background-color: darkgreen;
+}
+
+/********************* Pantallas de tablets y celulares *******************************/
+@media screen and (max-width: 768px){
+    .container{
+        width: 80%;
+    }
+    .heading{
+        font-size: 30px;
+    }
+    .joke{
+        font-size: 20px;
+    }
+    .btn{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .container{
+        width: 90%;
+    }
+    .heading{
+        font-size: 25px;
+    }
+    .joke{
+        font-size: 15px;
+    }
+    .btn{
+        font-size: 10px;
+    }
+}
